@@ -1,0 +1,119 @@
+Here is an example of a hospital admission form in HTML:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Admission Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		.form {
+			width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.form label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form input[type="text"], .form input[type="date"], .form input[type="tel"], .form select {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.form textarea {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.form input[type="submit"] {
+			width: 200px;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.form input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="form">
+		<h1>Hospital Admission Form</h1>
+		<form>
+			<!-- Patient Information -->
+			<h2>Patient Information</h2>
+			<label for="patient_name">Patient Name:</label>
+			<input type="text" id="patient_name" name="patient_name">
+			
+			<label for="date_of_birth">Date of Birth:</label>
+			<input type="date" id="date_of_birth" name="date_of_birth">
+			
+			<label for="gender">Gender:</label>
+			<select id="gender" name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+			
+			<!-- Contact Information -->
+			<h2>Contact Information</h2>
+			<label for="address">Address:</label>
+			<textarea id="address" name="address"></textarea>
+			
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			
+			<!-- Medical Information -->
+			<h2>Medical Information</h2>
+			<label for="medical_history">Medical History:</label>
+			<textarea id="medical_history" name="medical_history"></textarea>
+			
+			<label for="current_medication">Current Medication:</label>
+			<textarea id="current_medication" name="current_medication"></textarea>
+			
+			<!-- Submit Button -->
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
+```
+
+This code creates a hospital admission form with sections for:
+
+- Patient information (name, date of birth, gender)
+- Contact information (address, phone, email)
+- Medical information (medical history, current medication)
+
+The form includes input fields, text areas, and a submit button.
+
+Note: This is just a basic example and you should add more fields and validation according to your requirements. Also, this form does not actually submit the data anywhere, as it is just an HTML example. To make the form functional, you would need to add a backend scripting language, such as PHP or Python, to handle the form submission and store the data in a database.
